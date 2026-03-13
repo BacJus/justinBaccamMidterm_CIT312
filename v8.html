@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 312 MIDTERM</title>
+    <link rel="icon" href="icon.jpg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+    <header>
+         <img src="icon.jpg">
+        <h1>V8 FORMULA 1 - THE PINNACLE OF MOTORSPORT</h1>
+        <button class="menuToggle">&#9776;</button>
+
+        <nav class="nav">
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="v10.html">V10</a></li>
+                <li><a href="v8.html">V8</a></li>
+                <li><a href="v6.html">V6 Hybrid</a></li>
+                <li><a href="present.html">Present Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cardContainer">
+    <!--Card 1 -->
+    <div class="card">
+        <div class="cardInner"> 
+            <div class="cardFront">
+            <img src="v8one.jpg">
+            <h2>V8 Engine Explained</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>The V8 engine had 8 cylinders and was slightly smaller than the V10. Though they,
+                    were smaller, they still reached 18,000 RPMs and produced 130 decibels.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 2 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v8two.jpg">
+            <h2>Vettel and Red Bull Racing</h2>
+            </div>
+
+            <div class="cardBack">
+                <p> Sebastian Vettel and Red Bull Racing dominated the early 2010s. From 2010
+                    to 2013, Vettel won four world championships in a row. He showed the world how strong
+                    the Red Bull car and the team were at the time.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Card 3 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v8three.jpg">
+            <h2>Memorable Race</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>The 2012 Brazilian Grand Prix was a dramatic race where Vettel recovered
+                    from an early car spin and damage to finish 6th place in the race. This won him 
+                the drivers championship that year by just 3 points over Fernando Alonso.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 4 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v8four.jpg">
+            <h2>Fun Fact</h2>
+            </div>
+
+            <div class="cardBack">
+            <p> The 2012 season had 7 different winners in the first seven races, making it one of the most
+                unpredictable seasons ever.
+            </p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="bottomBoxes">
+    <section class="survey">
+        <h2>Survey Form</h2>
+        <form class="surveyForm" onsubmit="submit1()">
+             <select name="engine" id="engine">
+                <option value="V10">V10</option>
+                <option value="V8">V8</option>
+                <option value="V6">V6 Hybrid</option>
+            </select>
+            <br> <br>
+            <label for="name">Favorite Team:</label>     
+            <input type="text" name="name" id="name">
+            <br> <br>
+            <label for="comments">Comments:</label>     
+            <textarea name="comments" id="comments" rows="2" cols="25"></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+            <script>
+            function submit1(){
+            alert("Submitted!");
+            }
+            </script>
+        </form>
+    </section>
+
+    <section class="overview">
+        <h2>Signifiance of the V8</h2>
+        <p>The V8 engines were important because they marked a shift towards controlling costs and improving safety while
+            maintaining high perfomance. Though they were smaller than the V10s, they still produced impressive power and high revs.
+            This era also featured intense competition between teams and drivers, including the dominance of Sebastian Vettel and 
+            Red Bull Racing. 2006 - 2013.
+        </p>
+    </section>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/Formula1/"><i class="fab fa-facebook"></i></a>
+            <a href= "https://www.instagram.com/f1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg"><i class="fab fa-youtube"></i></a>
+            <a href= "https://www.formula1.com/"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        toggle.addEventListener("click",()=>{
+            nav.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

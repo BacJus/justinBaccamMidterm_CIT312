@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 312 MIDTERM</title>
+    <link rel="icon" href="icon.jpg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+    <header>
+         <img src="icon.jpg">
+        <h1> V6 FORMULA 1 - THE PINNACLE OF MOTORSPORT</h1>
+        <button class="menuToggle">&#9776;</button>
+
+        <nav class="nav">
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="v10.html">V10</a></li>
+                <li><a href="v8.html">V8</a></li>
+                <li><a href="v6.html">V6 Hybrid</a></li>
+                <li><a href="present.html">Present Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cardContainer">
+    <!--Card 1 -->
+    <div class="card">
+        <div class="cardInner"> 
+            <div class="cardFront">
+            <img src="v6one.jpg">
+            <h2>V6 Hybrid Explained</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>The V6 Hybrid combines a 6 cylinder internal combustion engine with electric energy
+                    recovery systems. These systems collect energy from braking and heat then turn it into extra power
+                    stored via the battery.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 2 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v6two.jpg">
+            <h2>Hamilton/Mercedes and Verstappen/Red Bull Racing</h2>
+            </div>
+
+            <div class="cardBack">
+                <p> Lewis Hamilton and Mercedes dominated the early portion of the V6 Hybrid era. Mercedes won
+                    8 constructors championships and along those, Hamilton won 6 driver championships. From 2021 to 2024,
+                    Max Verstappen dominated the season, winning 4 consecutive driver championships with Red Bull Racing winning 2
+                    constructor championships along the way.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Card 3 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v6three.jpg">
+            <h2>Memorable Race</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>The 2021 Abu Dhabi Grand Prix is considered to be one of the most controversial races ever.
+                    A late safety car allowed Max Verstappen's Red Bull car to pit and gain a fresh set of new tires then,
+                    the race director made a controversial decision to allow the cars between Hamilton and Verstappen to separate,
+                    allowing Verstappen to be the car directly behind Hamilton. Verstappen passed him on the final lap and won his first
+                    drivers championship.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 4 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v6four.jpg">
+            <h2>Fun Fact</h2>
+            </div>
+
+            <div class="cardBack">
+            <p>The engines are able to convert its fuel energy into power
+                for it's electrical systems. This gives the car extra horse power and makes it go significantly faster. 
+            </p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="bottomBoxes">
+    <section class="survey">
+        <h2>Survey Form</h2>
+        <form class="surveyForm" onsubmit="submit1()">
+             <select name="engine" id="engine">
+                <option value="V10">V10</option>
+                <option value="V8">V8</option>
+                <option value="V6">V6 Hybrid</option>
+            </select>
+            <br> <br>
+            <label for="name">Favorite Team:</label>     
+            <input type="text" name="name" id="name">
+            <br> <br>
+            <label for="comments">Comments:</label>     
+            <textarea name="comments" id="comments" rows="2" cols="25"></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+            <script>
+            function submit1(){
+            alert("Submitted!");
+            }
+            </script>
+        </form>
+    </section>
+
+    <section class="overview">
+        <h2>Signifiance of the V6 Hybrid</h2>
+        <p>
+            The V6 Hybrid engines were significant because they introduced advanced hybrid technology to F1.
+            These engines comvined traditional combustion engines with energy recovery systems that produce electrical power, 
+            pushing the sport toward greater efficiency and innovation. This era is also defined by the dominance
+            of Lewis Hamilton and Mercedes as well as Max Verstappen and Red Bull Racing. 2014 - Present.
+        </p>
+    </section>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/Formula1/"><i class="fab fa-facebook"></i></a>
+            <a href= "https://www.instagram.com/f1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg"><i class="fab fa-youtube"></i></a>
+            <a href= "https://www.formula1.com/"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        toggle.addEventListener("click",()=>{
+            nav.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

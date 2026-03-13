@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 312 MIDTERM</title>
+    <link rel="icon" href="icon.jpg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+    <header>
+         <img src="icon.jpg">
+        <h1>FORMULA 1 - THE PINNACLE OF MOTORSPORT</h1>
+        <button class="menuToggle">&#9776;</button>
+
+        <nav class="nav">
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="v10.html">V10</a></li>
+                <li><a href="v8.html">V8</a></li>
+                <li><a href="v6.html">V6 Hybrid</a></li>
+                <li><a href="present.html">Present Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cardContainer">
+    <!--Card 1 -->
+    <div class="card">
+        <div class="cardInner"> 
+            <div class="cardFront">
+            <img src="v10one.jpg">
+            <h2>V10 Engine Explained</h2>
+            </div>
+
+            <div class="cardBack">
+                <p> The V10 engine had 10 cylinders arranged in a V shape. These engines were capable of
+                    reaching 20,000 RPMs and sounds producing 140 decibels. These engines were naturally aspirated,
+                    meaning they did not use turbochargers.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 2 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v10two.jpeg">
+            <h2>Michael Schumacher and Ferrari</h2>
+            </div>
+
+            <div class="cardBack">
+                <p> During the early 2000s, Michael Schumacher and Ferrari dominated Formula 1.
+                    Together, they won five world championships, both drivers and constructors (teams).
+                    The iconic red and white was a sight on many podiums during those years.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Card 3 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v10three.jpg">
+            <h2>Memorable Race</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>The 2000 Japanese Grand Prix was a significant moment in F1 history. There,
+                Schumacher won the race and secured his first championship with Ferrari, ending a long
+                championship drought of 21 years for the team.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 4 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="v10four.jpg">
+            <h2>Fun Fact</h2>
+            </div>
+
+            <div class="cardBack">
+            <p> Many fans idolize this period as the best sounding cars in Formula 1 History.
+            </p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="bottomBoxes">
+    <section class="survey">
+        <h2>Survey Form</h2>
+        <form class="surveyForm" onsubmit="submit1()">
+             <select name="engine" id="engine">
+                <option value="V10">V10</option>
+                <option value="V8">V8</option>
+                <option value="V6">V6 Hybrid</option>
+            </select>
+            <br> <br>
+            <label for="name">Favorite Team:</label>     
+            <input type="text" name="name" id="name">
+            <br> <br>
+            <label for="comments">Comments:</label>     
+            <textarea name="comments" id="comments" rows="2" cols="25"></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+            <script>
+            function submit1(){
+            alert("Submitted!");
+            }
+            </script>
+        </form>
+    </section>
+
+    <section class="overview">
+        <h2>Signifiance of the V10</h2>
+        <p>The V10 engines were one of the most exciting periods in Formula 1. These engines produced extremely high RPMs,
+            incredible sounds, and very powerful performances. Many fans remember this era for its thrill racing plus Schumacher's and Ferrari's
+            dominance. 1996 - 2005.
+        </p>
+    </section>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/Formula1/"><i class="fab fa-facebook"></i></a>
+            <a href= "https://www.instagram.com/f1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg"><i class="fab fa-youtube"></i></a>
+            <a href= "https://www.formula1.com/"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        toggle.addEventListener("click",()=>{
+            nav.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>

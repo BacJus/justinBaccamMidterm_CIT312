@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 312 MIDTERM</title>
+    <link rel="icon" href="icon.jpg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+    <header>
+         <img src="icon.jpg">
+        <h1>PRESENT FORMULA 1 - THE PINNACLE OF MOTORSPORT</h1>
+        <button class="menuToggle">&#9776;</button>
+
+        <nav class="nav">
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="v10.html">V10</a></li>
+                <li><a href="v8.html">V8</a></li>
+                <li><a href="v6.html">V6 Hybrid</a></li>
+                <li><a href="present.html">Present Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cardContainer">
+    <!--Card 1 -->
+    <div class="card">
+        <div class="cardInner"> 
+            <div class="cardFront">
+            <img src="pres1.jpg">
+            <h2>Hybrid System Redone</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>Still using the V6 Hybrid engines, Formula 1 has redesigned the power units to
+                    increase the amount of electrical power from 120kW to 350kW. This change is meant to improve
+                    efficiency and modern technology in the sport.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 2 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="pres2.jpg">
+            <h2>Venturi Tunnels Removed</h2>
+            </div>
+
+            <div class="cardBack">
+                <p> The new rules have removed the venturi tunnels from the floor of the cars.
+                    Venturi tunnels were shaped to help create downforce by using airflow under the car.
+                    Removing them has changed how teams design their cars and create grip to the track.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Card 3 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="pres3.jpg">
+            <h2>New Teams Entering</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>
+                Formula 1 is attracting new manufacturers and teams. 2 new teams, Cadillac and Audi.
+                Their presense has increased the competition and raised the stakes.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 4 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="pres4.jpg">
+            <h2>Fun Fact</h2>
+            </div>
+
+            <div class="cardBack">
+            <p>The 2026 Formula 1 cars can produce approximately 1,000 brake horsepower.
+                This is very, very fast. For reference my sedan is 125 (about 1/10th) yay.
+            </p>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="bottomBoxes">
+    <section class="survey">
+        <h2>Survey Form</h2>
+        <form class="surveyForm" onsubmit="submit1()">
+             <select name="engine" id="engine">
+                <option value="V10">V10</option>
+                <option value="V8">V8</option>
+                <option value="V6">V6 Hybrid</option>
+            </select>
+            <br> <br>
+            <label for="name">Favorite Team:</label>     
+            <input type="text" name="name" id="name">
+            <br> <br>
+            <label for="comments">Comments:</label>     
+            <textarea name="comments" id="comments" rows="2" cols="25"></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+            <script>
+            function submit1(){
+            alert("Submitted!");
+            }
+            </script>
+        </form>
+    </section>
+
+    <section class="overview">
+        <h2>Signifiance of the New Regulations</h2>
+        <p>
+            The 2026 regulations represent a major step towards the future of Formula 1. The rules increase
+            the use of electrical power while also introducing fully sustainable fuels to encourage new manufacturers
+            to join the sport. These changes aim to make F1 more environmentally friendly while still maintaining the 
+            high performance and excitement that define the sport. Present Day.
+        </p>
+    </section>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/Formula1/"><i class="fab fa-facebook"></i></a>
+            <a href= "https://www.instagram.com/f1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg"><i class="fab fa-youtube"></i></a>
+            <a href= "https://www.formula1.com/"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        toggle.addEventListener("click",()=>{
+            nav.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
