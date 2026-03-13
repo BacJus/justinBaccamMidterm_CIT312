@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT 312 MIDTERM</title>
+    <link rel="icon" href="icon.jpg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less"/>
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+</head>
+<body>
+    <header>
+         <img src="icon.jpg">
+        <h1>FORMULA 1 - THE PINNACLE OF MOTORSPORT</h1>
+        <button class="menuToggle">&#9776;</button>
+
+        <nav class="nav">
+            <ul> 
+                <li><a href="index.html">Home</a></li>
+                <li><a href="v10.html">V10</a></li>
+                <li><a href="v8.html">V8</a></li>
+                <li><a href="v6.html">V6 Hybrid</a></li>
+                <li><a href="present.html">Present Day</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="cardContainer">
+    <!--Card 1 -->
+    <div class="card">
+        <div class="cardInner"> 
+            <div class="cardFront">
+            <img src="img1.jpg">
+            <h2>V10 Era</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>One of the most exciting periods in Formula 1 History. These naturally aspirated
+                engines produced incredible sounds and power, reaching up to 20,000 RPM. Michael Schumacher
+                and Ferrari dominated much of this period. Many fans consider this the best sounding engines
+                ever used in Formula 1.
+                </p>
+                <a href="v10.html" class="btn">More Information</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 2 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="img2.jpg">
+            <h2>V8 Era</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>Although smaller than the previous V10s, the V8 engines still produced impressive
+                    performance and high revs up to 18,000 RPM. Loud and disruptive, these engines were
+                    certainly a sight to see and hear. This period saw strong competiton between teams, with
+                    Sebastian Vettel and Red Bull Racing dominating the early 2010s.
+                </p>
+                <a href="v8.html" class="btn">More Information</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Card 3 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="img3.jpg">
+            <h2>V6 Hybrid</h2>
+            </div>
+
+            <div class="cardBack">
+                <p>Introduced in 2014, these engines combine a traditional internal combustion engine
+                    with advanced energy recovery systems that generate electrical power to a battery. During
+                this era, Lewis Hamilton and Mercedes achieved success, while recent seasons have seen solid domination
+            by Max Verstappen and Red Bull Racing.</p>
+                <a href="v6.html" class="btn">More Information</a>
+            </div>
+        </div>
+    </div>
+
+    <!--Card 4 -->
+    <div class="card">
+        <div class="cardInner">
+            <div class="cardFront">
+            <img src="img4.png">
+            <h2>Present Day</h2>
+            </div>
+
+            <div class="cardBack">
+            <p>Formula 1 continues to evolve the V6 Hybrid engine as it enters the 2026 season. These rules
+                increase the amount of electrical power used by the hybrid systems. F1 is moving toward
+                fully sustainable fuels to its reduce environmental impact. These changes aim to make F1 more 
+                environmentally friendly, attract new manufacturers, and keep the racing competitive.
+            </p>
+                <a href="present.html" class="btn">More Information</a>
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <div class="bottomBoxes">
+    <section class="survey">
+        <h2>Survey Form</h2>
+        <form class="surveyForm" onsubmit="submit1()">
+             <select name="engine" id="engine">
+                <option value="V10">V10</option>
+                <option value="V8">V8</option>
+                <option value="V6">V6 Hybrid</option>
+            </select>
+            <br> <br>
+            <label for="name">Favorite Team:</label>     
+            <input type="text" name="name" id="name">
+            <br> <br>
+            <label for="comments">Comments:</label>     
+            <textarea name="comments" id="comments" rows="2" cols="25"></textarea>
+            <br> <br>
+            <input type="submit" value="Submit">
+            <script>
+            function submit1(){
+            alert("Submitted!");
+            }
+            </script>
+        </form>
+    </section>
+
+    <section class="overview">
+        <h2>Formula 1 Overview</h2>
+        <p>Formula 1 is often described as the pinnacle of motorsport racing. Over the past 30 years,
+        the sport has gone through different engine eras including the V10, V8, and V6 Hybrid periods.
+        Each era had its own sound, technology, significant figures, and memorable moments. This site
+        gives a quick look at how F1 has evolved from 1996 to the present day.</p>
+    </section>
+    </div>
+    <footer>
+        <div class="socials">
+            <a href="https://www.facebook.com/Formula1/"><i class="fab fa-facebook"></i></a>
+            <a href= "https://www.instagram.com/f1/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCB_qr75-ydFVKSF9Dmo6izg"><i class="fab fa-youtube"></i></a>
+            <a href= "https://www.formula1.com/"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+    <script>
+        const toggle = document.querySelector(".menuToggle");
+        const nav = document.querySelector(".nav");
+        toggle.addEventListener("click",()=>{
+            nav.classList.toggle("show");
+        });
+    </script>
+</body>
+</html>
